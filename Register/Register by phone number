@@ -1,7 +1,7 @@
-id: K1xRc1Hx2k6sd030XulA-g
+id: 2pduUZNW50-d3ocLJ4pz5Q
 projectId: DYpvAUfw5UC5tr5pUyz7Ag
 projectName: KITABISA
-created: 2022-10-23T10:21:37.5987408Z
+created: 2022-10-23T10:30:47.8740052Z
 protocol: 1
 tests:
 - id: qctFoO_7mEWQ_HN8jPn-Fw
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-10-20T21:15:27.0000000
-  modificationDate: 2022-10-20T22:02:23.0000000
+  modificationDate: 2022-10-23T10:30:48.0000000
   settings:
     automationAssistant: true
     appId: hUbnh-JwiEGc_XHjBXHjCA
@@ -244,19 +244,6 @@ elements:
   - name: XPATH
     value: /html/body/div[1]/div[1]/div/div[2]/form/div[1]/div/div/input
     priority: 1
-- id: 59fvvNDdrE-C-KhLDNaYxg
-  name: Nama Lengkap
-  type:
-    id: jUwODgyNjAyNzk2NTk1NDY
-    name: Textbox
-    source: System
-  locators:
-  - name: XPATH
-    value: //div[2]/div//input
-    priority: 0
-  - name: XPATH
-    value: /html/body/div[1]/div[1]/div/div[2]/form/div[2]/div/div/input
-    priority: 1
 - id: oLxSHkHUD0ScNZ_pym8PcA
   name: Daftar
   type:
@@ -273,7 +260,28 @@ elements:
   - name: XPATH
     value: /html/body/div[1]/div[1]/div/div[2]/form/div[4]/button
     priority: 2
-projectParameters: []
+- id: 59fvvNDdrE-C-KhLDNaYxg
+  name: Nama Lengkap
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div//input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[2]/div/div/input
+    priority: 1
+projectParameters:
+- id: 4La9g2dGfkSkG7G3cR87IQ
+  name: random_name
+  description: ''
+  value: ''
+- id: UFLfyrS2UUGhiG-7XEtudA
+  name: random_phoneNumber
+  description: ''
+  value: +93704044453
 addons:
 - id: hbCjXt9A1EOt4rfQr3FEtw
   source: Store
@@ -296,10 +304,6 @@ addons:
     name: Random name
     description: Generate random name
     className: GenerateName
-  - id: -H98fdaDgEmY3UvRXNL7xQ
-    name: Random first name
-    description: Generate random first name
-    className: GenerateFirstName
   minSdkLevel: 2
   minSdkVersion: 0.65.0
   sdkGeneration: 1
