@@ -1,0 +1,262 @@
+id: hgGEeGo6E0iEU2Lcn6Wjmw
+projectId: DYpvAUfw5UC5tr5pUyz7Ag
+projectName: KITABISA
+created: 2022-10-23T10:21:37.5988061Z
+protocol: 1
+tests:
+- id: ImyOi9tgnkKf2tsvYlanjA
+  name: Register by email
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-10-20T21:20:00.0000000
+  modificationDate: 2022-10-20T21:58:23.0000000
+  settings:
+    automationAssistant: true
+    appId: hUbnh-JwiEGc_XHjBXHjCA
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: hUbnh-JwiEGc_XHjBXHjCA
+    name: url
+    url: https://accounts.kitabisa.com/register
+    platform: Web
+  steps:
+  - id: CQKoaiDCk0SEQsSHI0spIw
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '{{ApplicationURL}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -5hjb86ir0qYQidKkz7y3Q
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: p24xEKDrlU6rAHJDmxt3xA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: tnulgwRp7EG0XHijr48ZeQ
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: -H98fdaDgEmY3UvRXNL7xQ
+      source: Store
+      addonId: -kT4Fi1xFk6PF8xkHU4vDg
+    parameterMaps:
+    - name: result
+      value: '[[random_name]]'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: XJPh3rzvPEmTa0kjW5xcsw
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: p8o72gfWC0GfpgG7JbOhOw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[random_name]][[gmail]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 9VeRaFnQLU2I_uT68sFqbA
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: 59fvvNDdrE-C-KhLDNaYxg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 26Zu0BmGD0u580WmODy_Tw
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: 59fvvNDdrE-C-KhLDNaYxg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[random_name]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: DyvArxrxP0y3j8Fe7oAlTA
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: oLxSHkHUD0ScNZ_pym8PcA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://accounts.kitabisa.com/register
+    type: Input
+auxTests: []
+elements:
+- id: p24xEKDrlU6rAHJDmxt3xA
+  name: phone number/Email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div/div/input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[1]/div/div/input
+    priority: 1
+- id: p8o72gfWC0GfpgG7JbOhOw
+  name: Input Email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //form/div[1]//input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[1]/div/div/input
+    priority: 1
+- id: 59fvvNDdrE-C-KhLDNaYxg
+  name: Nama Lengkap
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div//input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[2]/div/div/input
+    priority: 1
+- id: oLxSHkHUD0ScNZ_pym8PcA
+  name: Daftar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Daftar']
+    priority: 0
+  - name: XPATH
+    value: //div[4]/button
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[4]/button
+    priority: 2
+projectParameters: []
+addons:
+- id: -kT4Fi1xFk6PF8xkHU4vDg
+  source: Store
+  version: 2.2
+  actions:
+  - id: WPhnHCq54UahejQjE96ABw
+    name: Random name
+    description: Generate random name
+    className: GenerateName
+  - id: -H98fdaDgEmY3UvRXNL7xQ
+    name: Random first name
+    description: Generate random first name
+    className: GenerateFirstName
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: B8E84E0F0EE92A1E8BB93EB3C515DB4F0106CAA6087A437A171B1B0191F14F88
