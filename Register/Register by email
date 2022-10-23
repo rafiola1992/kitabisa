@@ -1,18 +1,18 @@
-id: w3En6fv7V06U_Sd1pMns1Q
+id: _GKid0tbZkiTHB3gPdhXOQ
 projectId: DYpvAUfw5UC5tr5pUyz7Ag
 projectName: KITABISA
-created: 2022-10-23T10:34:36.6904533Z
+created: 2022-10-23T10:34:44.3836828Z
 protocol: 1
 tests:
 - id: MUXf2B5IUUGfs53Xw2UqXA
-  name: Register by phone number - copy
+  name: Register by email
   description: ''
   platform: Web
   type: Web
   driverType: Chrome
   version: 0.1
   creationDate: 2022-10-23T10:34:36.0000000
-  modificationDate: 2022-10-23T10:34:36.0000000
+  modificationDate: 2022-10-23T10:34:44.0000000
   settings:
     automationAssistant: true
     appId: hUbnh-JwiEGc_XHjBXHjCA
