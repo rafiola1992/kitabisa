@@ -1,7 +1,7 @@
-id: _GKid0tbZkiTHB3gPdhXOQ
+id: UbbVtYa9c0e1SGW-W9p8Lw
 projectId: DYpvAUfw5UC5tr5pUyz7Ag
 projectName: KITABISA
-created: 2022-10-23T10:34:44.3836828Z
+created: 2022-10-23T10:37:53.8518939Z
 protocol: 1
 tests:
 - id: MUXf2B5IUUGfs53Xw2UqXA
@@ -12,7 +12,7 @@ tests:
   driverType: Chrome
   version: 0.1
   creationDate: 2022-10-23T10:34:36.0000000
-  modificationDate: 2022-10-23T10:34:44.0000000
+  modificationDate: 2022-10-23T10:37:14.0000000
   settings:
     automationAssistant: true
     appId: hUbnh-JwiEGc_XHjBXHjCA
@@ -83,21 +83,12 @@ tests:
       failureBehaviorType: Inherit
       takeScreenshotConditionType: Inherit
     action:
-      id: btvC-oYNPkazg7REct5RWA
+      id: -H98fdaDgEmY3UvRXNL7xQ
       source: Store
-      addonId: hbCjXt9A1EOt4rfQr3FEtw
+      addonId: -kT4Fi1xFk6PF8xkHU4vDg
     parameterMaps:
-    - name: country
-      value: Indonesia
-      direction: Input
-    - name: generatedNumber
-      value: '[[random_phoneNumber]]'
-      direction: Output
-    - name: countryCode
-      value: ''
-      direction: Output
-    - name: codelessNumber
-      value: ''
+    - name: result
+      value: '[[random_name]]'
       direction: Output
     conditions: []
     validations: []
@@ -120,7 +111,7 @@ tests:
       source: System
     parameterMaps:
     - name: keys
-      value: '[[random_phoneNumber]]'
+      value: '[[random_name]][[gmail]]'
       direction: Input
     conditions: []
     validations: []
@@ -145,33 +136,10 @@ tests:
     conditions: []
     validations: []
     contexts: []
-  - id: 2MPHiB5dXUymODdwT82qkA
-    enabled: true
-    invertResult: false
-    order: 6
-    repeat: 1
-    type: Addon
-    settings:
-      sleepTime: -1
-      timeout: -1
-      sleepTiming: Inherit
-      failureBehaviorType: Inherit
-      takeScreenshotConditionType: Inherit
-    action:
-      id: WPhnHCq54UahejQjE96ABw
-      source: Store
-      addonId: -kT4Fi1xFk6PF8xkHU4vDg
-    parameterMaps:
-    - name: result
-      value: '[[random_name]]'
-      direction: Output
-    conditions: []
-    validations: []
-    contexts: []
   - id: eIB8B8w3YES5nIdvt9RZ6w
     enabled: true
     invertResult: false
-    order: 7
+    order: 6
     repeat: 1
     type: Action
     elementId: 59fvvNDdrE-C-KhLDNaYxg
@@ -194,7 +162,7 @@ tests:
   - id: niBwXJgyk0e_PQaE4vUuWg
     enabled: true
     invertResult: false
-    order: 8
+    order: 7
     repeat: 1
     type: Action
     elementId: oLxSHkHUD0ScNZ_pym8PcA
@@ -278,32 +246,19 @@ projectParameters:
   name: random_name
   description: ''
   value: ''
-- id: UFLfyrS2UUGhiG-7XEtudA
-  name: random_phoneNumber
+- id: NX5Dn-CbH0u-JDuIpKCKfw
+  name: gmail
   description: ''
-  value: +93704044453
+  value: '@gmail.com'
 addons:
-- id: hbCjXt9A1EOt4rfQr3FEtw
-  source: Store
-  version: 1.1
-  actions:
-  - id: btvC-oYNPkazg7REct5RWA
-    name: Generate random phone number
-    description: Generate phone number in {{country}}
-    className: io.testproject.RandomNumber
-  minSdkLevel: 2
-  minSdkVersion: 0.62.0
-  sdkGeneration: 1
-  language: Java
-  hash: B05E61D61CD67CF57364977301D8ABCA57628EC2C2DACB215F8DB80C79DD931A
 - id: -kT4Fi1xFk6PF8xkHU4vDg
   source: Store
   version: 2.2
   actions:
-  - id: WPhnHCq54UahejQjE96ABw
-    name: Random name
-    description: Generate random name
-    className: GenerateName
+  - id: -H98fdaDgEmY3UvRXNL7xQ
+    name: Random first name
+    description: Generate random first name
+    className: GenerateFirstName
   minSdkLevel: 2
   minSdkVersion: 0.65.0
   sdkGeneration: 1
