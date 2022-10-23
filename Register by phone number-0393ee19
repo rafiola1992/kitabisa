@@ -1,0 +1,311 @@
+id: Sgsx7r3M90qOXkiYqwiVNA
+projectId: DYpvAUfw5UC5tr5pUyz7Ag
+projectName: KITABISA
+created: 2022-10-23T10:26:44.5702963Z
+protocol: 1
+tests:
+- id: jOCmD_qQYE28NJikl1XlxQ
+  name: Register by phone number-0393ee19
+  description: 'This test created from git commit: 0393ee193c9ca1d9cd563d89681d4bdd1b3aa93b'
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-10-23T10:26:44.0000000
+  modificationDate: 2022-10-23T10:26:44.0000000
+  settings:
+    automationAssistant: true
+    appId: hUbnh-JwiEGc_XHjBXHjCA
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: hUbnh-JwiEGc_XHjBXHjCA
+    name: url
+    url: https://accounts.kitabisa.com/register
+    platform: Web
+  steps:
+  - id: LL2i7WCuOE--xwtL-2-9fQ
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '{{ApplicationURL}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3A32c0xwW0-buO4Z7zyhjA
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: p24xEKDrlU6rAHJDmxt3xA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 9UtM63vdO0-YDo8g4g_LaA
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: btvC-oYNPkazg7REct5RWA
+      source: Store
+      addonId: hbCjXt9A1EOt4rfQr3FEtw
+    parameterMaps:
+    - name: country
+      value: Indonesia
+      direction: Input
+    - name: generatedNumber
+      value: '[[random_phoneNumber]]'
+      direction: Output
+    - name: countryCode
+      value: ''
+      direction: Output
+    - name: codelessNumber
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 48YWjTxoNk2fp0MExDqzkg
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: p8o72gfWC0GfpgG7JbOhOw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[random_phoneNumber]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 5YfFCuMda0m1QiPk817Wng
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: 59fvvNDdrE-C-KhLDNaYxg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RNPQ4vjmT0ywLog3nacxEg
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: WPhnHCq54UahejQjE96ABw
+      source: Store
+      addonId: -kT4Fi1xFk6PF8xkHU4vDg
+    parameterMaps:
+    - name: result
+      value: '[[random_name]]'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: DTMRiLuUwUCirdKIXdGg1A
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: 59fvvNDdrE-C-KhLDNaYxg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[random_name]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 2GFAbX1Ifk2PYgH8moRzRQ
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: oLxSHkHUD0ScNZ_pym8PcA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://accounts.kitabisa.com/register
+    type: Input
+auxTests: []
+elements:
+- id: p24xEKDrlU6rAHJDmxt3xA
+  name: phone number/Email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div/div/input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[1]/div/div/input
+    priority: 1
+- id: p8o72gfWC0GfpgG7JbOhOw
+  name: Input Email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //form/div[1]//input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[1]/div/div/input
+    priority: 1
+- id: oLxSHkHUD0ScNZ_pym8PcA
+  name: Daftar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Daftar']
+    priority: 0
+  - name: XPATH
+    value: //div[4]/button
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[4]/button
+    priority: 2
+- id: 59fvvNDdrE-C-KhLDNaYxg
+  name: Nama Lengkap
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div//input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div[1]/div/div[2]/form/div[2]/div/div/input
+    priority: 1
+projectParameters:
+- id: 4La9g2dGfkSkG7G3cR87IQ
+  name: random_name
+  description: ''
+  value: ''
+- id: UFLfyrS2UUGhiG-7XEtudA
+  name: random_phoneNumber
+  description: ''
+  value: +93704044453
+addons:
+- id: hbCjXt9A1EOt4rfQr3FEtw
+  source: Store
+  version: 1.1
+  actions:
+  - id: btvC-oYNPkazg7REct5RWA
+    name: Generate random phone number
+    description: Generate phone number in {{country}}
+    className: io.testproject.RandomNumber
+  minSdkLevel: 2
+  minSdkVersion: 0.62.0
+  sdkGeneration: 1
+  language: Java
+  hash: B05E61D61CD67CF57364977301D8ABCA57628EC2C2DACB215F8DB80C79DD931A
+- id: -kT4Fi1xFk6PF8xkHU4vDg
+  source: Store
+  version: 2.2
+  actions:
+  - id: WPhnHCq54UahejQjE96ABw
+    name: Random name
+    description: Generate random name
+    className: GenerateName
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: B8E84E0F0EE92A1E8BB93EB3C515DB4F0106CAA6087A437A171B1B0191F14F88
